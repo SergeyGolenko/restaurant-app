@@ -31,7 +31,7 @@ class OnboardingViewController: UIViewController {
 
 //MARK: - delegate and datasource extension
 
-extension OnboardingViewController: UICollectionViewDelegate,UICollectionViewDataSource{
+extension OnboardingViewController: UICollectionViewDelegate,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout{
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return 5
@@ -43,6 +43,16 @@ extension OnboardingViewController: UICollectionViewDelegate,UICollectionViewDat
         
         return cell
     }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        
+        let itemWidth = collectionView.bounds.width / 2
+        let itemHeight = collectionView.bounds.height / 4.56
+        return CGSize(width: itemWidth, height: itemHeight)
+    }
+    
+    
+
     
     
     
