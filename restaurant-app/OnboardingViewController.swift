@@ -13,6 +13,8 @@ import UIKit
 
 class OnboardingViewController: UIViewController {
     
+    private let slides : [Slide] = Slide.collection
+    
     //MARK: - IBOutlet
     @IBOutlet weak var collectionView : UICollectionView!
 
@@ -44,7 +46,7 @@ class OnboardingViewController: UIViewController {
 extension OnboardingViewController: UICollectionViewDelegate,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout{
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 5
+        return slides.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
@@ -56,7 +58,8 @@ extension OnboardingViewController: UICollectionViewDelegate,UICollectionViewDat
 //            color = .green
 //        }
         cell.backgroundColor = color
-        cell.configure()
+        let item = slides[indexPath.item]
+        cell.configure(with: item)
         return cell
     }
     

@@ -7,6 +7,21 @@
 
 import UIKit
 
+struct Slide {
+    let title: String
+    let animationName: String
+    let buttonColor: UIColor
+    let buttonTitle: String
+    
+    static let collection: [Slide] = [
+        .init(title: "Get your favourite food delivered to you under 30 minutes anytime", animationName: "lottieDeliveryGuy", buttonColor: .systemYellow, buttonTitle: "Next"),
+        .init(title: "We serve only from choiced restaurants in your area", animationName: "lottieRestaurant", buttonColor: .systemGreen, buttonTitle: "Order Now")
+    ]
+    
+}
+
+
+
 class OnboardingCell: UICollectionViewCell {
     
     @IBOutlet weak var animationView: UIView!
@@ -20,7 +35,10 @@ class OnboardingCell: UICollectionViewCell {
     
     
     
-  func configure(){
+    func configure(with slide: Slide){
+        titleLabel.text = slide.title
+        actionButton.backgroundColor = slide.buttonColor
+        actionButton.setTitle(slide.buttonTitle, for: .normal)
         
     }
     

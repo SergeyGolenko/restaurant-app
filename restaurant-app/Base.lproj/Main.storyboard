@@ -106,6 +106,7 @@
                                         </collectionViewCellContentView>
                                         <size key="customSize" width="335" height="816"/>
                                         <connections>
+                                            <outlet property="actionButton" destination="h4c-sf-Bqx" id="1z6-vG-w9D"/>
                                             <outlet property="animationView" destination="WD8-3y-1MR" id="PcI-Om-OZh"/>
                                             <outlet property="titleLabel" destination="jqH-3m-HzK" id="RaY-wV-320"/>
                                         </connections>
