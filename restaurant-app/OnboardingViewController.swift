@@ -9,13 +9,19 @@ import UIKit
 
 class OnboardingViewController: UIViewController {
     
+    //MARK: - IBOutlet
     @IBOutlet weak var collectionView : UICollectionView!
 
+    
+    
+    //MARK: - lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
         setupCollectionView()
     }
     
+    
+    //MARK: - function custom
     private func setupCollectionView(){
         
         let layout = UICollectionViewFlowLayout()
@@ -24,9 +30,8 @@ class OnboardingViewController: UIViewController {
         collectionView.dataSource = self
         collectionView.delegate = self
         collectionView.contentInsetAdjustmentBehavior = .never
+        collectionView.isPagingEnabled = true
     }
-
-
 }
 
 
