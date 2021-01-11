@@ -23,6 +23,7 @@ class OnboardingViewController: UIViewController {
         collectionView.collectionViewLayout = layout
         collectionView.dataSource = self
         collectionView.delegate = self
+        collectionView.contentInsetAdjustmentBehavior = .never
     }
 
 
@@ -39,16 +40,24 @@ extension OnboardingViewController: UICollectionViewDelegate,UICollectionViewDat
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cellId", for: indexPath)
-        cell.backgroundColor = .red
-        
+        var color = UIColor.clear
+        if indexPath.item % 2 == 0 {
+            color = .red
+        } else {
+            color = .green
+        }
+        cell.backgroundColor = color
         return cell
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        
-        let itemWidth = collectionView.bounds.width / 2
-        let itemHeight = collectionView.bounds.height / 4.56
+        let itemWidth = collectionView.bounds.width
+        let itemHeight = collectionView.frame.height / 2
         return CGSize(width: itemWidth, height: itemHeight)
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
+        return 1
     }
     
     
