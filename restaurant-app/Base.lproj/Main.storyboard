@@ -37,7 +37,7 @@
                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="7iX-28-Hg1">
                                                     <rect key="frame" x="0.0" y="151.5" width="335" height="513"/>
                                                     <subviews>
-                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WD8-3y-1MR">
+                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WD8-3y-1MR" customClass="AnimationView" customModule="Lottie">
                                                             <rect key="frame" x="0.0" y="0.0" width="335" height="335"/>
                                                             <color key="backgroundColor" systemColor="systemTealColor"/>
                                                             <constraints>
@@ -107,7 +107,7 @@
                                         <size key="customSize" width="335" height="816"/>
                                         <connections>
                                             <outlet property="actionButton" destination="h4c-sf-Bqx" id="1z6-vG-w9D"/>
-                                            <outlet property="animationView" destination="WD8-3y-1MR" id="PcI-Om-OZh"/>
+                                            <outlet property="animationView" destination="WD8-3y-1MR" id="7eV-yr-rD0"/>
                                             <outlet property="titleLabel" destination="jqH-3m-HzK" id="RaY-wV-320"/>
                                         </connections>
                                     </collectionViewCell>
@@ -132,6 +132,9 @@
             <point key="canvasLocation" x="-23.188405797101453" y="137.94642857142856"/>
         </scene>
     </scenes>
+    <designables>
+        <designable name="WD8-3y-1MR"/>
+    </designables>
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

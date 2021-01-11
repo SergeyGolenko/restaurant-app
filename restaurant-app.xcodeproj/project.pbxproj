@@ -16,6 +16,7 @@
 		2C4F3F5725AC7F2600430AF2 /* OnboardingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C4F3F5625AC7F2600430AF2 /* OnboardingCell.swift */; };
 		2C5FF96E25AC8F4D009E5AFA /* lottieRestaurant.json in Resources */ = {isa = PBXBuildFile; fileRef = 2C5FF96C25AC8F4C009E5AFA /* lottieRestaurant.json */; };
 		2C5FF96F25AC8F4D009E5AFA /* lottieDelivery.json in Resources */ = {isa = PBXBuildFile; fileRef = 2C5FF96D25AC8F4D009E5AFA /* lottieDelivery.json */; };
+		2C89AFD625AC948500AD2DF5 /* Slide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C89AFD525AC948500AD2DF5 /* Slide.swift */; };
 		CA255EE40BD07D323BFC6A8D /* Pods_restaurant_app.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7016C6844964894FBB0DA30E /* Pods_restaurant_app.framework */; };
 /* End PBXBuildFile section */
 
@@ -31,6 +32,7 @@
 		2C4F3F5625AC7F2600430AF2 /* OnboardingCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingCell.swift; sourceTree = "<group>"; };
 		2C5FF96C25AC8F4C009E5AFA /* lottieRestaurant.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = lottieRestaurant.json; sourceTree = "<group>"; };
 		2C5FF96D25AC8F4D009E5AFA /* lottieDelivery.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = lottieDelivery.json; sourceTree = "<group>"; };
+		2C89AFD525AC948500AD2DF5 /* Slide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Slide.swift; sourceTree = "<group>"; };
 		7016C6844964894FBB0DA30E /* Pods_restaurant_app.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_restaurant_app.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B706A585164F67B8A44AE877 /* Pods-restaurant-app.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-restaurant-app.debug.xcconfig"; path = "Target Support Files/Pods-restaurant-app/Pods-restaurant-app.debug.xcconfig"; sourceTree = "<group>"; };
 		FBC65578D9B4EC1243D2202F /* Pods-restaurant-app.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-restaurant-app.release.xcconfig"; path = "Target Support Files/Pods-restaurant-app/Pods-restaurant-app.release.xcconfig"; sourceTree = "<group>"; };
@@ -83,6 +85,7 @@
 				2C4F3F4225AC66E300430AF2 /* SceneDelegate.swift */,
 				2C4F3F4425AC66E300430AF2 /* OnboardingViewController.swift */,
 				2C4F3F5625AC7F2600430AF2 /* OnboardingCell.swift */,
+				2C89AFD525AC948500AD2DF5 /* Slide.swift */,
 				2C4F3F4625AC66E300430AF2 /* Main.storyboard */,
 				2C4F3F4925AC66E700430AF2 /* Assets.xcassets */,
 				2C4F3F4B25AC66E700430AF2 /* LaunchScreen.storyboard */,
@@ -228,6 +231,7 @@
 				2C4F3F4125AC66E300430AF2 /* AppDelegate.swift in Sources */,
 				2C4F3F5725AC7F2600430AF2 /* OnboardingCell.swift in Sources */,
 				2C4F3F4325AC66E300430AF2 /* SceneDelegate.swift in Sources */,
+				2C89AFD625AC948500AD2DF5 /* Slide.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
