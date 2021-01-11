@@ -13,6 +13,7 @@
 		2C4F3F4825AC66E300430AF2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C4F3F4625AC66E300430AF2 /* Main.storyboard */; };
 		2C4F3F4A25AC66E700430AF2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C4F3F4925AC66E700430AF2 /* Assets.xcassets */; };
 		2C4F3F4D25AC66E700430AF2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C4F3F4B25AC66E700430AF2 /* LaunchScreen.storyboard */; };
+		2C4F3F5725AC7F2600430AF2 /* OnboardingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C4F3F5625AC7F2600430AF2 /* OnboardingCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		2C4F3F4925AC66E700430AF2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2C4F3F4C25AC66E700430AF2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2C4F3F4E25AC66E700430AF2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2C4F3F5625AC7F2600430AF2 /* OnboardingCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 				2C4F3F4025AC66E300430AF2 /* AppDelegate.swift */,
 				2C4F3F4225AC66E300430AF2 /* SceneDelegate.swift */,
 				2C4F3F4425AC66E300430AF2 /* OnboardingViewController.swift */,
+				2C4F3F5625AC7F2600430AF2 /* OnboardingCell.swift */,
 				2C4F3F4625AC66E300430AF2 /* Main.storyboard */,
 				2C4F3F4925AC66E700430AF2 /* Assets.xcassets */,
 				2C4F3F4B25AC66E700430AF2 /* LaunchScreen.storyboard */,
@@ -139,6 +142,7 @@
 			files = (
 				2C4F3F4525AC66E300430AF2 /* OnboardingViewController.swift in Sources */,
 				2C4F3F4125AC66E300430AF2 /* AppDelegate.swift in Sources */,
+				2C4F3F5725AC7F2600430AF2 /* OnboardingCell.swift in Sources */,
 				2C4F3F4325AC66E300430AF2 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

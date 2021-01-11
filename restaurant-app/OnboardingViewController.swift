@@ -7,6 +7,10 @@
 
 import UIKit
 
+
+
+
+
 class OnboardingViewController: UIViewController {
     
     //MARK: - IBOutlet
@@ -44,30 +48,26 @@ extension OnboardingViewController: UICollectionViewDelegate,UICollectionViewDat
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cellId", for: indexPath)
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cellId", for: indexPath) as! OnboardingCell
         var color = UIColor.clear
-        if indexPath.item % 2 == 0 {
-            color = .red
-        } else {
-            color = .green
-        }
+//        if indexPath.item % 2 == 0 {
+//            color = .red
+//        } else {
+//            color = .green
+//        }
         cell.backgroundColor = color
+        cell.configure()
         return cell
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         let itemWidth = collectionView.bounds.width
-        let itemHeight = collectionView.frame.height / 2
+        let itemHeight = collectionView.frame.height
         return CGSize(width: itemWidth, height: itemHeight)
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
         return 1
     }
-    
-    
-
-    
-    
-    
+ 
 }
