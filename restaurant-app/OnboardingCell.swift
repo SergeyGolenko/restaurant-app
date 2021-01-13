@@ -10,11 +10,13 @@ import Lottie
 
 class OnboardingCell: UICollectionViewCell {
     
+    var actionButtonDidTap : (() -> Void)?
+    
     @IBOutlet weak var animationView: AnimationView!
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var actionButton: UIButton!
     @IBAction func actionButtonTapped(){
-        
+        actionButtonDidTap?()
     }
     
     func configure(with slide: Slide){
