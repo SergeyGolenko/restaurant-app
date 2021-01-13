@@ -22,9 +22,13 @@ extension UICollectionView {
         self.setContentOffset(CGPoint(x: contentOffset, y: self.contentOffset.y), animated: true)
     }
     
-    func goToItem( item indexPathItemMy : Int){
+     func goToItem( item indexPathItemMy : Int){
         let nextItem = indexPathItemMy + 1
         let nextIndexPath = IndexPath(item: nextItem, section: 0)
         self.scrollToItem(at: nextIndexPath, at:.top, animated: true)
+    }
+    
+    func colorCellItem(){
+        self.backgroundColor = .blue
     }
 }

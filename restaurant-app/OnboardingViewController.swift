@@ -22,9 +22,7 @@ class OnboardingViewController: UIViewController {
         setupPageControll()
     }
     
-    
     //MARK: - function custom
-    
    private func  setupPageControll(){
     pageControl.numberOfPages = slides.count
     let angle = CGFloat.pi/2
@@ -60,12 +58,9 @@ class OnboardingViewController: UIViewController {
                               completion: nil)
         }
     }
-    
-
 }
 
 //MARK: - delegate and datasource extension
-
 extension OnboardingViewController: UICollectionViewDelegate,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout{
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -104,8 +99,7 @@ extension OnboardingViewController: UICollectionViewDelegate,UICollectionViewDat
         if indexPath.item == slides.count - 1 {
             showMainApp()
         } else {
-           
-            collectionView.goToItem(item: indexPath.item)
+            collectionView.goToItem(item:0)
         }
     }
  
