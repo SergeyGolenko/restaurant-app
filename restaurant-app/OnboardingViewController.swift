@@ -100,6 +100,7 @@ extension OnboardingViewController: UICollectionViewDelegate,UICollectionViewDat
             showMainApp()
         } else {
             collectionView.goToItem(item:0)
+            self.pageControl.currentPage = indexPath.item + 1
         }
     }
  

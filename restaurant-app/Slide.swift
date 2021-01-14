@@ -16,6 +16,7 @@ struct Slide {
     static let collection: [Slide] = [
         .init(title: "Get your favourite food delivered to you under 30 minutes anytime", animationName: "lottieDelivery", buttonColor: .systemYellow, buttonTitle: "Next"),
         .init(title: "We serve only from choiced restaurants in your area", animationName: "lottieRestaurant", buttonColor: .systemGreen, buttonTitle: "Order Now")
+    
     ]
     
 }
